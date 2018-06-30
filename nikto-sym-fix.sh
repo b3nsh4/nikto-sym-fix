@@ -31,8 +31,8 @@ printf "CHECKING /bin.."
 sleep 3
 echo "COMPLETED!..."
 sleep 3
-echo "$red"
-echo "$red  
+printf "$red \n"
+
  +-+-+-+-+-+ +-+-+-+ +-+-+-+
  |n|i|k|t|o| |s|y|m| |f|i|x|
  +-+-+-+-+-+ +-+-+-+ +-+-+-+
