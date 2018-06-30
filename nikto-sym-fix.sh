@@ -93,8 +93,10 @@ echo "$blue
 
    select opt in "yes" "no"; do
      case $opt in
-    	 	yes) echo "This process would take min 10min"
-    	 		 sleep 3
+    	 	yes) echo "This process would take 10min"
+    	 		 sleep 2
+			 echo "If you get a option for installation type, choose local::lib"
+			 sleep 4
     	 		cpan install Net::SSLeay::Handle -y -local::lib; break;;    
      		no) echo "It Doesn't installed.."; break;;
      esac
