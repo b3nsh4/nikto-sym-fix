@@ -89,7 +89,7 @@ echo "$blue
      FOR GIVING SSL SUPPORT IN NIKTO? SELECT YOUR CHOICE.\n" 
     echo "1=yes(recommended) || 2=no"
 
-#SHALL WE INSTALL THE SSLeay in NIKTO? 'd be interesting!'
+#SHALL WE INSTALL THE SSLeay in NIKTO? 'd give you ssleay support!'
 
    select opt in "yes" "no"; do
      case $opt in
