@@ -75,7 +75,7 @@ printf "$blue LINKING... \n"
 
 #symlinkin now..
 
-ln -s /data/data/com.termux/files/home/nikto/program/nikto.pl /data/data/com.termux/files/usr/bin
+ln -sf /data/data/com.termux/files/home/nikto/program/nikto.pl /data/data/com.termux/files/usr/bin/nikto 
 
 sleep 3
 
