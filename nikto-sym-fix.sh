@@ -51,6 +51,12 @@ echo "
  +-+-+-+-+-+-+-+ 
  "
 #cloning the repo..
+#Making a dir because of file conflict issue.
+
+
+
+mkdir sym-fix
+cd sym-fix
 git clone https://github.com/bensh4/nikto
 echo "$yellow"
 echo "
@@ -75,7 +81,7 @@ printf "$blue LINKING... \n"
 
 #symlinkin now..
 
-ln -sf /data/data/com.termux/files/home/nikto/program/nikto.pl /data/data/com.termux/files/usr/bin/nikto 
+ln -sf /data/data/com.termux/files/home/sym-fix/nikto/program/nikto.pl /data/data/com.termux/files/usr/bin/nikto 
 
 sleep 3
 
@@ -104,7 +110,7 @@ echo "$blue
 
 sleep 2
  
-printf "$yellow Now you can execute nikto.pl from anywhere..! \n"
+printf "$yellow Now you can execute nikto from anywhere..! \n"
 
 printf "$red GITHUB:bensh4 \n"
 
@@ -116,4 +122,4 @@ sleep 5
 
 printf "$red"
 
-nikto.pl
+nikto
