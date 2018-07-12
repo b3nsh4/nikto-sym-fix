@@ -54,10 +54,11 @@ echo "
 #Making a dir because of file conflict issue.
 
 
-
+cd $HOME
 mkdir sym-fix
 cd sym-fix
 git clone https://github.com/bensh4/nikto
+cd $HOME
 echo "$yellow"
 echo "
  +-+-+-+-+
@@ -72,9 +73,9 @@ echo "$blue"
 
 echo "working on a config file..."
 sleep 2
-cd /data/data/com.termux/files/home/nikto/program
+cd /data/data/com.termux/files/home/sym-fix/nikto/program
 mv nikto.conf /data/data/com.termux/files/home/
-cp /data/data/com.termux/files/home/nikto/program/nikto.pl /data/data/com.termux/files/home/
+cp /data/data/com.termux/files/home/sym-fix/nikto/program/nikto.pl /data/data/com.termux/files/home/
 echo "$red"
 
 printf "$blue LINKING... \n"
@@ -95,7 +96,7 @@ echo "$blue
      FOR GIVING SSL SUPPORT IN NIKTO? SELECT YOUR CHOICE.\n" 
     echo "1=yes(recommended) || 2=no"
 
-#SHALL WE INSTALL THE SSLeay in NIKTO? 'd give you ssleay support!'
+#DO YOU WANT TO INSTALL THE SSLeay in NIKTO? 'd give you ssleay support!'
 
    select opt in "yes" "no"; do
      case $opt in
