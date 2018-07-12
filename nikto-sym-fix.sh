@@ -53,10 +53,12 @@ echo "
 #cloning the repo..
 #Making a dir because of file conflict issue.
 
-
+sleep 2
 cd $HOME
 mkdir sym-fix
+sleep 3
 cd sym-fix
+sleep 1
 git clone https://github.com/bensh4/nikto
 cd $HOME
 echo "$yellow"
