@@ -54,8 +54,13 @@ echo "
 #Making a dir because of file conflict issue.
 
 sleep 2
-cd $HOME
+
+	if [[ $pwd != /data/data/com.termux/files/home ]]; then 
+		cd $HOME
+	fi
+
 mkdir sym-fix
+printf "|W|O|R|K|I|N|G|......."
 sleep 3
 cd sym-fix
 sleep 1
