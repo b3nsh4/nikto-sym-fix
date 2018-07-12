@@ -121,11 +121,13 @@ sleep 2
  
 printf "$yellow Now you can execute nikto from anywhere..! \n"
 
-printf "$red GITHUB:bensh4 \n"
+printf "\n $red GITHUB:: |b|e|n|s|h|4| \n"
 
-printf "$blue YOUTUBE:> CYBER HUNK <||> DEEP CODING \n"
+sleep 2
 
-printf "$yellow now starting nikto.............. \n"
+printf "\n $blue YOUTUBE:> CYBER HUNK <||> DEEP CODING \n"
+
+printf "\n $yellow now starting nikto.............. \n"
 
 sleep 5
 
