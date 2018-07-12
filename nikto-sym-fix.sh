@@ -59,11 +59,12 @@ sleep 2
 		cd $HOME
 	fi
 
-mkdir sym-fix
+
 printf "|W|O|R|K|I|N|G|......."
 sleep 3
+mkdir sym-fix
 cd sym-fix
-sleep 1
+sleep 2
 git clone https://github.com/bensh4/nikto
 cd $HOME
 echo "$yellow"
