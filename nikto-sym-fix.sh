@@ -113,9 +113,11 @@ echo "$blue
 			 echo "If you get a option for installation type, choose local::lib"
 			 sleep 4
                  pkg install clang -y
+                 pkg install openssl openssl-dev openssl-tool
                  cpan install local::lib
-    	 		cpan install Net::SSLeay::Handle -y -local::lib; break;;    
-     		no) echo "It Doesn't installed.."; break;;
+                 pkg install make -y
+    	 		 cpan install Net::SSLeay::Handle -y -local::lib; break;;    
+     	no) echo "It Doesn't installed.."; break;;
      esac
     done
 
